@@ -5,5 +5,7 @@
 <!-- <img src="{{ imageURL }}" alt = "{{title}}" > -->
   <img [src] = "imageURL" [alt] = "title" >
   <p> {{ description }}</p>
-  <p> <button (click)="onSnap()">{{ buttonText }}</button></p>
+  <p> <button (click)="onSnap()">{{ buttonText }}
+      {{snaps}}
+  </button></p>
 </div>

@@ -24,12 +24,12 @@ export class TopShopComponent implements OnInit {
   }
 
   onSnap() {
-   if (this.buttonText === 'Oh Snap!'){
+   if (this.buttonText === 'Like!'){
     this.snaps++;
-    this.buttonText = 'Oops, Unsnap';
+    this.buttonText = 'Dislike!';
    }else{
       this.snaps--;
-      this.buttonText = 'Oh Snap!';
+      this.buttonText = 'Like!';
    }
   }
 }
