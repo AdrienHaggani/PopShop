@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-top-shop',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-shop.component.scss']
 })
 export class TopShopComponent implements OnInit {
+  @Input() topshop!: TopShopComponent;
   title!: string;
   description!: string;
   createdDate!: Date;
