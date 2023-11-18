@@ -11,6 +11,7 @@ export class TopShopComponent implements OnInit {
   createdDate!: Date;
   snaps!: number;
   imageURL!: string;
+  buttonText!: string;
 
   ngOnInit() {
 
@@ -19,5 +20,17 @@ export class TopShopComponent implements OnInit {
   this.createdDate = new Date();
   this.snaps = 6;
   this.imageURL = 'https://m.media-amazon.com/images/I/61lhze5owSL._SL1500_.jpg';
+  this.buttonText = 'Oh Snap!';
+  }
+
+  onSnap() {
+   if (this.buttonText === 'Oh Snap!'){
+    this.snaps++;
+    this.buttonText = 'Oops, Unsnap';
+   }else{
+      this.snaps--;
+      this.buttonText = 'Oh Snap!';
+   }
   }
 }
+

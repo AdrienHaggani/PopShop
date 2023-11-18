@@ -1,8 +1,9 @@
-<h2>{{ title }}</h2>
-<P> Mise en ligne le {{createdDate}}</P>
+<div>
+  <h2>{{ title }}</h2>
+  <P> Mise en ligne le {{ createdDate }}</P>
 <!--Methode vanilla avec une syntax qui fonctione mais pas opti-->
 <!-- <img src="{{ imageURL }}" alt = "{{title}}" > -->
-<img [src] = "imageURL" [alt] = "title" >
-<p> {{ description }}</p>
-<p> {{ snaps }}</p>
-
+  <img [src] = "imageURL" [alt] = "title" >
+  <p> {{ description }}</p>
+  <p> <button (click)="onSnap()">{{ buttonText }}</button></p>
+</div>
