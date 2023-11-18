@@ -10,6 +10,7 @@ export class TopShopComponent implements OnInit {
   description!: string;
   createdDate!: Date;
   snaps!: number;
+  imageURL!: string;
 
   ngOnInit() {
 
@@ -17,5 +18,6 @@ export class TopShopComponent implements OnInit {
   this.description = 'Lambena le meilleur ennemi des point noirs !';
   this.createdDate = new Date();
   this.snaps = 6;
+  this.imageURL = 'https://m.media-amazon.com/images/I/61lhze5owSL._SL1500_.jpg';
   }
 }

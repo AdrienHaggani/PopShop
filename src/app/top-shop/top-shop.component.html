@@ -1,1 +1,8 @@
-<p>top-shop works!</p>
+<h2>{{ title }}</h2>
+<P> Mise en ligne le {{createdDate}}</P>
+<!--Methode vanilla avec une syntax qui fonctione mais pas opti-->
+<!-- <img src="{{ imageURL }}" alt = "{{title}}" > -->
+<img [src] = "imageURL" [alt] = "title" >
+<p> {{ description }}</p>
+<p> {{ snaps }}</p>
+
